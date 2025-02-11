@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Sonia's Portfolio!" />
+    <title>Portfolio | Sonia</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Smooth Scroll and Custom Styles -->
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; }
+        .dark-mode { background-color: #1a202c; color: #cbd5e0; }
+        .section-title { font-size: 2.5rem; font-weight: bold; text-align: center; margin-bottom: 2rem; color: #1d4ed8; }
+        .content-box { background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+        .dark .content-box { background: #2d3748; color: #e2e8f0; }
+        .nav-link { padding: 0.5rem 1rem; border-radius: 0.5rem; transition: all 0.3s; color: #3b82f6; }
+        .nav-link:hover, .nav-link:focus { background-color: #3b82f6; color: white; }
+        #scrollTopBtn { position: fixed; bottom: 20px; right: 20px; display: none; background: #3b82f6; color: white; border-radius: 50%; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease-in-out; }
+        #scrollTopBtn:hover { transform: scale(1.1); }
+        .animate-fade-slide { animation: fadeSlide 1.5s ease-in-out; }
+        @keyframes fadeSlide { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+        
+        nav { background-color: rgba(30, 58, 138, 0.9); margin-top: 10px; border-radius: 10px; padding: 0 20px; }
+        nav a { font-size: 0.875rem; }
+        .logo { font-size: 1rem; margin-right: auto; color: #e0e7ff; }
+
+        #home h1 { color: #1e3a8a; }
+        .social-icons a { color: #1e40af; transition: color 0.3s; }
+        .social-icons a:hover { color: #2563eb; }
+    </style>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!--5-->
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#1C1C1E] dark:bg-[#121212]"> <!-- Deep Charcoal -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#F5F5F5] dark:bg-[#1E293B]"> <!-- Off-White / Dark Slate -->
+    
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-[#374151] dark:bg-[#111827]"> <!-- Slate Gray -->
+    
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-[#1E40AF] dark:bg-[#1E3A8A]"> <!-- Indigo (Deep Blue Accent) -->
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-[#F3F4F6] dark:bg-[#1F2937]"> <!-- Light Gray / Charcoal -->
+    
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="py-20 bg-[#0F766E] dark:bg-[#115E59]"> <!-- Teal Accent -->
+    
+    <!-- Internships Section -->
+    <section id="internships" class="py-20 bg-[#F9FAFB] dark:bg-[#2D2D2D]"> <!-- Very Light Gray / Dark Gray -->
+    
+    <!-- Beyond Work Section -->
+    <section id="beyondwork" class="py-20 bg-[#FEF3C7] dark:bg-[#F59E0B]"> <!-- Soft Amber Accent -->
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-[#F8FAFC] dark:bg-[#1E293B]"> <!-- Very Light Slate / Dark Slate -->
+    
+    <!-- Awards & Achievements Section -->
+    <section id="awards" class="py-20 bg-[#1E3A8A] dark:bg-[#0F172A]"> <!-- Deep Blue Accent / Near Black -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#0F172A] dark:bg-[#000000]"> <!-- Near Black -->
+
+<!--6-->
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#FAFAFA] dark:bg-[#1B1B1B]"> <!-- Ivory / Deep Gray -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#E5E5E5] dark:bg-[#2C2C2C]"> <!-- Warm Light Gray -->
+    
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-[#1F2937] dark:bg-[#111827]"> <!-- Slate Gray -->
+    
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-[#065F46] dark:bg-[#064E3B]"> <!-- Emerald Green Accent -->
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-[#F9FAFB] dark:bg-[#1E1E1E]"> <!-- Soft White / Deep Gray -->
+    
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="py-20 bg-[#EA580C] dark:bg-[#C2410C]"> <!-- Burnt Orange Accent -->
+    
+    <!-- Internships Section -->
+    <section id="internships" class="py-20 bg-[#F3F4F6] dark:bg-[#2E2E2E]"> <!-- Light Gray -->
+    
+    <!-- Beyond Work Section -->
+    <section id="beyondwork" class="py-20 bg-[#FDE68A] dark:bg-[#FBBF24]"> <!-- Soft Gold Accent -->
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-[#E5E7EB] dark:bg-[#1F2937]"> <!-- Light Slate -->
+    
+    <!-- Awards & Achievements Section -->
+    <section id="awards" class="py-20 bg-[#0F172A] dark:bg-[#000000]"> <!-- Deep Navy / Black -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#1C1C1C] dark:bg-[#000000]"> <!-- Charcoal Black -->
+    
+<!--7-->
+<!-- About Section -->
+<section id="about" class="py-20 bg-gradient-to-r from-[#F5F7FA] to-[#E4E7EB] dark:from-[#1F2937] dark:to-[#111827]"> <!-- Soft Gray Gradient -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gradient-to-r from-[#E0F2F1] to-[#B2DFDB] dark:from-[#004D40] dark:to-[#00251A]"> <!-- Teal Gradient -->
+    
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-gradient-to-r from-[#E8EAF6] to-[#C5CAE9] dark:from-[#1A237E] dark:to-[#0D1330]"> <!-- Indigo Gradient -->
+    
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gradient-to-r from-[#FFF3E0] to-[#FFE0B2] dark:from-[#FF6F00] dark:to-[#BF360C]"> <!-- Soft Apricot Gradient -->
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gradient-to-r from-[#EDE7F6] to-[#D1C4E9] dark:from-[#4527A0] dark:to-[#1A237E]"> <!-- Lavender Gradient -->
+    
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="py-20 bg-gradient-to-r from-[#E8F5E9] to-[#C8E6C9] dark:from-[#1B5E20] dark:to-[#004D40]"> <!-- Soft Green Gradient -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-[#ECEFF1] to-[#CFD8DC] dark:from-[#263238] dark:to-[#102027]"> <!-- Cool Gray Gradient -->
+
+<!--8-->
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#FAFAFA] dark:bg-[#1F2937]"> <!-- Neutral Background -->
+    <h2 class="text-4xl font-bold text-[#1E3A8A] dark:text-[#60A5FA]"> <!-- Deep Blue Accent Title -->
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#F5F5F5] dark:bg-[#2D2D2D]">
+    <h2 class="text-4xl font-bold text-[#065F46] dark:text-[#34D399]"> <!-- Emerald Green Accent Title -->
+    
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-[#EDEDED] dark:bg-[#1A1A1A]">
+    <h2 class="text-4xl font-bold text-[#FFB300] dark:text-[#FFCA28]"> <!-- Amber Accent Title -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#F0F0F0] dark:bg-[#121212]">
+    <h2 class="text-4xl font-bold text-[#0F172A] dark:text-[#60A5FA]"> <!-- Deep Navy Accent Title -->
+
+<!--9-->
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#1A1A1A] text-[#F5F5F5]"> <!-- Dark Base with Light Text -->
+    <h2 class="text-4xl font-bold text-[#60A5FA]"> <!-- Soft Cyan Accent Title -->
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#121212] text-[#F0F0F0]">
+    <h2 class="text-4xl font-bold text-[#BB86FC]"> <!-- Electric Purple Accent Title -->
+    
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-[#1E1E1E] text-[#E5E5E5]">
+    <h2 class="text-4xl font-bold text-[#FFC107]"> <!-- Amber Accent Title -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#0D0D0D] text-[#F5F5F5]">
+    <h2 class="text-4xl font-bold text-[#60A5FA]"> <!-- Soft Cyan Accent Title -->
+    

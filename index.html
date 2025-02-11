@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Sonia's Portfolio!" />
+    <title>Portfolio | Sonia</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./styles.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Smooth Scroll and Custom Styles -->
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; }
+        .dark-mode { background-color: #1a202c; color: #cbd5e0; }
+        .section-title { font-size: 2.5rem; font-weight: bold; text-align: center; margin-bottom: 2rem; color: #1d4ed8; }
+        .content-box { background: #ffffff; padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+        .dark .content-box { background: #2d3748; color: #e2e8f0; }
+        .nav-link { padding: 0.5rem 1rem; border-radius: 0.5rem; transition: all 0.3s; color: #3b82f6; }
+        .nav-link:hover, .nav-link:focus { background-color: #3b82f6; color: white; }
+        #scrollTopBtn { position: fixed; bottom: 20px; right: 20px; display: none; background: #3b82f6; color: white; border-radius: 50%; padding: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease-in-out; }
+        #scrollTopBtn:hover { transform: scale(1.1); }
+        .animate-fade-slide { animation: fadeSlide 1.5s ease-in-out; }
+        @keyframes fadeSlide { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+        
+        nav { background-color: rgba(30, 58, 138, 0.9); margin-top: 10px; border-radius: 10px; padding: 0 20px; }
+        nav a { font-size: 0.875rem; }
+        .logo { font-size: 1rem; margin-right: auto; color: #e0e7ff; }
+
+        #home h1 { color: #1e3a8a; }
+        .social-icons a { color: #1e40af; transition: color 0.3s; }
+        .social-icons a:hover { color: #2563eb; }
+    </style>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+   <!-- Navigation Bar -->
+<header class="fixed top-0 left-0 w-full shadow-md z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ul class="flex justify-center items-center h-16 space-x-6">
+            <li><a href="#home" class="nav-link text-black hover:underline">Home</a></li>
+            <li><a href="#about" class="nav-link text-black hover:underline">About</a></li>
+            <li><a href="#portfolio" class="nav-link text-black hover:underline">Portfolio</a></li>
+            <li><a href="#experience" class="nav-link text-black hover:underline">Experience</a></li>
+            <li><a href="#education" class="nav-link text-black hover:underline">Education</a></li>
+            <li><a href="#certifications" class="nav-link text-black hover:underline">Certifications</a></li>
+            <li><a href="#volunteering" class="nav-link text-black hover:underline">Volunteering</a></li>
+            <li><a href="#internships" class="nav-link text-black hover:underline">Internships</a></li>
+            <li><a href="#beyondwork" class="nav-link text-black hover:underline">Hobbies</a></li>
+            <li><a href="#skills" class="nav-link text-black hover:underline">Skills</a></li>
+            <li><a href="#awards" class="nav-link text-black hover:underline">Awards</a></li>
+            <li><a href="#contact" class="nav-link text-black hover:underline">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+        }
+      </script>
+      <!-- Light/Dark Mode Toggle Button -->
+      <button id="theme-toggle" class="fixed top-20 right-5 bg-gray-200 dark:bg-gray-700 p-3 rounded-full shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        <i class="fas fa-moon hidden dark:inline"></i> <!-- Show Moon in Dark Mode -->
+        <i class="fas fa-sun dark:hidden"></i> <!-- Show Sun in Light Mode -->
+    </button>
+    
+</header>
+
+<!-- CSS 1-->
+<style>
+   nav {
+       background-color: transparent;
+       margin-top: 10px;
+       padding: 0 20px;
+   }
+
+   .nav-link {
+       font-weight: 600;
+       transition: all 0.3s ease-in-out;
+   }
+
+   .nav-link:hover, .nav-link.active {
+       color: #cbcde1;
+       border-bottom: 2px solid #d4d6e2;
+       padding-bottom: 0.5rem;
+   }
+</style>
+
+<style>
+    nav {
+        background-color: transparent;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+ 
+    .nav-link {
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+    }
+ 
+    .nav-link:hover, .nav-link.active {
+        color: #cbcde1;
+        border-bottom: 2px solid #d4d6e2;
+        padding-bottom: 0.5rem;
+    }
+ 
+    #vanta-globe {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+        padding: 2rem;
+        padding-left: 5rem;
+    }
+ 
+    .home-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        transform: translateY(-50px); /* Move image upwards */
+    }
+    
+    .home-image img {
+        width: 300px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+ 
+    .home-content {
+        text-align: left;
+        z-index: 10;
+        max-width: 50%;
+    }
+ 
+    .home-content h2 {
+        font-size: 4rem;
+        font-weight: 800;
+        color: #002057;
+        margin-bottom: 0.5rem;
+    }
+ 
+    .home-content h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #1976d2;
+        margin-bottom: 1rem;
+    }
+ 
+    .home-content p {
+        font-size: 2rem;
+        color: #0d47a1;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+ 
+    .home-content p .typed-text {
+        color: #1565c0;
+        font-weight: 700;
+    }
+ 
+    .home-content .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #2196f3;
+        color: #fff;
+        border-radius: 50px;
+        box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        transition: background 0.3s ease;
+    }
+ 
+    .home-content .btn:hover {
+        background-color: #0d47a1;
+    }
+ 
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+ 
+    .social-icons a {
+        font-size: 2rem;
+        color: #1976d2;
+        background-color: #f0f8ff;
+        padding: 0.8rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+ 
+    .social-icons a:hover {
+        background-color: #1976d2;
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        #vanta-globe {
+            flex-direction: column;
+            text-align: center;
+        }
+ 
+        .home-image {
+            margin: 2rem 0 0 0;
+        }
+ 
+        .home-image img {
+            width: 200px;
+            height: 300px;
+        }
+    }
+ </style>
+ 
+<!-- Home Section with Globe Background -->
+<div id="vanta-globe">
+    <!-- Left Content: Image -->
+    <div class="home-image">
+        <img src="./images/s3.jpg" alt="Sonia Ranvir">
+    </div>
+
+    <!-- Right Content: Text -->
+    <section id="home" class="home-content">
+        <h2>Hi There,</h2>
+        <h1>I'm Sonia Ranvir</h1>
+        <p>I am into <span class="typed-text"></span></p>
+        <a href="#about" class="btn">About Me <i class="fas fa-arrow-circle-down"></i></a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/soniaranvir/" aria-label="LinkedIn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Soniaranvir" aria-label="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://medium.com/@soniaranvir15" aria-label="Medium" target="_blank">
+                <i class="fab fa-medium"></i>
+            </a>            
+        </div>
+    </div>
+</div>
+
+
+ 
+ <!-- Typed Text Script -->
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script>
+     var typed = new Typed('.typed-text', {
+         strings: ["Data Analytics", "Python Development", "Data Engineering", "Data Visualizations", "Business Intelligence", "Machine Learning", "Cloud Computing", "Big Data Analytics", "Data Warehousing", "ETL Development", "Data Modelling", "Data Governance", "Data Security", "Data Privacy", "Data Compliance", "Data Strategy"],
+         typeSpeed: 50,
+         backSpeed: 30,
+         loop: true
+     });
+ </script>
+ 
+  
+  <!-- Globe Animation Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+  <script>
+    VANTA.GLOBE({
+      el: "#vanta-globe",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3b82f6,
+      color2: 0x2563eb,
+      backgroundColor: 0xf1f5f9
+    });
+  </script>
+  
+  <!-- Double Line Break -->
+   <div class="w-full border-t dark:border-blue-500 my-2"></div>
+
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-[#E3F2FD]"> <!-- Deep Charcoal -->
+    <div class="max-w-5xl mx-auto px-4">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200">About Me</h2>
+        
+        <!-- Content Box with Animation -->
+        <div class="content-box p-12 bg-gradient-to-r from-[#BBDEFB] to-[#90CAF9] dark:from-gray-700 dark:to-gray-800 shadow-2xl rounded-3xl max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="1500">
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                I’m a <strong>Data Analyst & Engineer</strong> with over <strong>2 years of experience</strong> transforming complex datasets into actionable insights that drive meaningful business impact.
+            </p>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                My passion for data goes beyond just analyzing numbers; it's about uncovering hidden patterns, solving real-world problems, and empowering businesses to make data-driven decisions that create long-term value.
+            </p>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                Whether optimizing sales performance or streamlining operations,  I leverage tools like <strong>SQL, Python, Tableau, Power BI</strong>, and cloud platforms to build <strong>scalable solutions</strong>, automate workflows, and craft visualizations that tell compelling stories. For me, every dataset is an <strong>opportunity to drive change and make a difference</strong>.
+            </p>
+            <p class="text-lg text-gray-700 dark:text-gray-300">
+                I bring a <strong>structured yet innovative approach</strong> to problem-solving, ensuring data doesn’t just inform decisions  it <strong>sparks innovation</strong>. Constantly evolving and learning, I design solutions that help businesses <strong>stay agile</strong>, adapt to emerging trends, and <strong>stay ahead in an ever-changing world</strong>.
+            </p>                      
+        </div>
+
+        <!-- Tech Stack Section with Animations -->
+        <div class="max-w-6xl mx-auto px-4 mt-10">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Tech Stack</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="SQL" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib" class="w-16 h-16">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" class="w-16 h-16">
+                <img src="./images/snow.png" alt="Snowflake" class="w-16 h-16">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-16 h-16">
+                <img src="./images/aws.svg" alt="AWS" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" class="w-16 h-16">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Microsoft Azure" class="w-16 h-16">
+                <img src="./images/Fabric_final_x256.webp" alt="Microsoft Fabric" class="w-16 h-16">
+                <img src="./images/icons8-power-bi-144.png" alt="Power BI" class="w-16 h-16">
+                <img src="./images/tab1.png" alt="Tableau" class="w-16 h-16">
+                <img src="./images/n12.png" alt="Databricks" class="w-16 h-16">
+                <img src="./images/Apache Airflow.png" alt="Airflow" class="w-16 h-16">                
+                <img src="./images/api.png" alt="API" class="w-16 h-16">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AOS Animation Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,  // Animation happens only once when you scroll into view
+    offset: 200  // Adjusts when the animation triggers (200px before the section hits the viewport)
+  });
+</script>
+
+</body>
+</html>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-[#F5F5F5] dark:bg-[#1E293B]"> <!-- Off-White / Dark Slate -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-up" data-aos-duration="1000"> Portfolio </h2>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1000">
+                <img src="images/Netflix.png" alt="Netflix Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                <a href="https://public.tableau.com/app/profile/sonia.ranvir/viz/Netflix_17355013153570/Netflix" target="_blank"
+                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
+                    <span class="text-white text-lg font-semibold">Read More</span>
+                </a>
+                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Netflix Analysis Dashboard</h3>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1100">
+                <img src="images/bing api.png" alt="Bing API Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                <a href="https://github.com/Soniaranvir/End-to-End-Data-Engineer" target="_blank"
+                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
+                    <span class="text-white text-lg font-semibold">Read More</span>
+                </a>
+                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Bing API Project</h3>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1200">
+                <img src="images/Untitled design-2.png" alt="Walmart Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                <a href="https://github.com/Soniaranvir/End-to-End-Data-Analytics-Project" target="_blank"
+                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
+                    <span class="text-white text-lg font-semibold">Read More</span>
+                </a>
+                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Walmart Sales Analysis</h3>
+            </div>
+    
+            <!-- Project 4 -->
+            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1300">
+                <img src="images/ds116.png" alt="Spotify Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                <a href="https://github.com/Soniaranvir/Spotify-Playlist-Analysis-Python-Project/blob/main/README.md" target="_blank"
+                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
+                    <span class="text-white text-lg font-semibold">Read More</span>
+                </a>
+                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Spotify API Playlist Analysis</h3>
+            </div>
+    
+            <!-- Project 5 -->
+            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1400">
+                <img src="images/Streamlit Preview.png" alt="Streamlit Dashboard Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                <a href="https://sales-dashboard-app-qrkzx6tezyzewgrumtmgl5.streamlit.app/" target="_blank"
+                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
+                    <span class="text-white text-lg font-semibold">Read More</span>
+                </a>
+                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Streamlit Sales Dashboard </h3>
+            </div>
+    
+            <!-- Project 6 -->
+            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1500">
+                <img src="images/Dashboard 1.png" alt="Stakeholder Insights Analysis" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
+                <a href="https://public.tableau.com/app/profile/sonia.ranvir/viz/Yesbank_17355854184130/Dashboard1" target="_blank"
+                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
+                    <span class="text-white text-lg font-semibold">Read More</span>
+                </a>
+                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Stakeholder Insights Dashboard </h3>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+
+<!-- AOS Initialization -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    offset: 150,
+    duration: 1000,
+  });
+</script>
+
+<!-- Work Experience Section -->
+<section id="experience" class="py-20 bg-[#64B5F6]"> <!-- Slate Gray -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-white dark:text-blue-300 mb-12" data-aos="fade-down">Work Experience</h2>
+        <div class="relative">
+            <!-- Vertical Timeline Line -->
+            <div class="absolute left-12 top-0 h-full border-l-4 border-blue-500"></div>
+
+            <!-- Experience 1 -->
+            <div class="relative pl-32 mb-12" data-aos="fade-right">
+                <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
+                    <img src="images/images-4.png" alt="Cafe Landwer Logo" class="w-16 h-16 rounded-full">
+                </div>
+                <div class="p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Cafe Landwer</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-300">Client Experience Analyst | August 2022 - August 2024</p>
+                    <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">At Landwer, I excelled in a high-volume environment, serving over 200+ guests everyday while maintaining a 95% satisfaction rating. Through personalized service and strategic upselling, I achieved a 20% increase in average check value, contributing over $15,000 in daily sales.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Collaborating closely with the sales team, I developed and implemented upselling strategies that directly drove revenue growth. My consistent performance in this area was recognized with top sales awards, underscoring my contribution to the restaurant's financial success.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">I played a key role in training and mentoring new staff, ensuring operational efficiency and a 99% order accuracy rate. This fostered a cohesive team environment, enabling us to deliver exceptional customer experiences even during peak times.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">My experience at Landwer honed my ability to adapt quickly, multitask effectively, and communicate clearly under pressure—skills that were critical to driving sales, optimizing team performance, and consistently exceeding customer expectations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="relative pl-32 mb-12" data-aos="fade-left">
+                <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
+                    <img src="images/w2.png" alt="Clear Tax Logo" class="w-16 h-16 rounded-full">
+                </div>
+                <div class="p-8 bg-gray-50 dark:bg-gray-600 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Clear Tax</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-300">Financial Data Analyst | July 2021 - December 2021</p>
+                    <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">At ClearTax, India’s leading fintech and SaaS platform, I played a pivotal role in enhancing tax compliance solutions,managing 1000+ client accounts monthly and facilitating over 50,000 tax filings across Income Tax Returns (ITRs), Goods and Services Tax (GST), Tax Deducted at Source (TDS), and business taxes.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">This strategic impact resulted in over $2 million in taxes filed and $1.5 million in tax savings during my tenure, while driving process automation that supported $8 million in revenue growth in 2021 through products like ClearTax GST, ClearTax TDS, ClearTax e-Filing, and ClearTax Tax Planning.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Collaborated with cross-functional teams, including finance, legal, and tax compliance experts, to optimize tax filing automation, ensuring regulatory adherence and a seamless client experience.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">In a hyper-growth fintech environment, I developed deep expertise in tax technology and data-driven financial solutions, improving compliance efficiency and customer experience at scale while contributing to India’s largest tax platform serving 1M+ taxpayers annually.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="relative pl-32 mb-12" data-aos="fade-right">
+                <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
+                    <img src="images/m1m.jpeg" alt="Million Minds Infotech Logo" class="w-16 h-16 rounded-full">
+                </div>
+                <div class="p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Million Minds Infotech</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-300">Human Resources Analyst | January 2021 - June 2021</p>
+                    <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">At Million Minds Infotech, I played a pivotal role in driving digital transformation for Fortune 500 clients across sectors such as insurance, logistics, and video analytics, helping them navigate the post-COVID landscape.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Contributed to the recruitment of over 2,000+ individuals in 2021, as Million Minds ramped up its hiring efforts to meet the demand for innovative technology solutions, playing a key role in shaping the workforce of the future.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Led the enhancement of HR management software, streamlining recruitment processes and enabling clients to scale their operations quickly and efficiently in response to the growing demand for skilled talent.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">By optimizing operational workflows and implementing cutting-edge technology solutions, I helped improve both internal processes and client satisfaction, positioning Million Minds as a leader in tech-driven workforce and digital solutions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="relative pl-32 mb-12" data-aos="fade-left">
+                <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
+                    <img src="images/IncubatorLogo.jpg" alt="Villgro Innovations Foundation Logo" class="w-16 h-16 rounded-full">
+                </div>
+                <div class="p-8 bg-gray-50 dark:bg-gray-600 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Villgro Innovations Foundation</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-300">Operations and Marketing Head Intern | October 2017 - January 2020</p>
+                    <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">As part of Villgro, a leading incubator in the non-profit sector focused on scaling innovative, impactful social enterprises in India, I directed operations for the Global Unconvention event over 3 consecutive years, overseeing 700+ delegates and 120+ speakers across Agriculture, Energy, Education, and Health sectors. This initiative played a key role in scaling impactful social enterprises, fostering collaborations that addressed India's most pressing development challenges.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Devised and executed 16 targeted social media marketing campaigns, achieving a 158% increase in digital impressions and conversions year-over-year. This contributed significantly to raising awareness and driving engagement for Villgro's portfolio of social enterprises, helping bring innovative solutions to underserved communities.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Collaborated closely with the finance department to manage a $200k budget for the Global Unconvention event, optimizing resource allocation to maximize the event's impact on driving policy objectives, fostering sustainability, and empowering India’s social entrepreneurship ecosystem.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Supported Villgro's mission to drive systemic change by helping social enterprises access capital, market opportunities, and strategic partnerships that fostered sustainable growth and positive community impact, enabling scalable innovations that contributed to India’s self-reliance and resilient development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Education Section -->
+<section id="education" class="py-20 bg-[#E3F2FD]"> <!-- Indigo (Deep Blue Accent) -->
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-blue-700 dark:text-blue-300 mb-12" data-aos="zoom-in-up" data-aos-duration="1000">Education</h2>
+
+        <div id="education-cards" class="relative">
+            <!-- Post Graduation Card -->
+            <div class="education-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 animate-fade-in-up" data-aos="fade-right" data-aos-duration="1500">
+                <div class="flex items-center mb-6">
+                    <img src="images/senec.png" alt="The Climber Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-700 dark:text-blue-300">Post Graduation in Global Business Management</h3>
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Jan 2022 - Dec 2023</span>
+                </div>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Seneca College of Arts & Technology | Toronto, Canada</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">Graduated with a focus on global business strategy, project management, and data analytics. This program enhanced my ability to manage international projects, lead global teams, and develop strategies that drive business success in diverse markets.</p>
+                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    <li><strong>Courses:</strong> Marketing & Communications, Global Economics, International Finance, Decision Theory, Data Analytics & Finance, Global Investment, Project Management, Strategic Customer Relationship Management, Global Business Strategies</li>
+                    <li><strong>Assistant Partnerships:</strong> Supported financial literacy initiatives with Prosper Seneca Financial Literacy Club, driving student engagement.</li>
+                    <li><strong>Research Assistant:</strong> Contributed to land valuation studies in Southwestern Ontario through data analysis and market research.</li>
+                    <li><strong>Integrated Business Projects:</strong> Led cross-functional projects solving real-world business challenges using data analytics and strategic leadership.</li>
+                </ul>
+                <button id="next-education" class="absolute right-4 bottom-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Bachelor Card (Initially Hidden) -->
+            <div class="education-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 hidden" data-aos="fade-left" data-aos-duration="1500">
+                <div class="flex items-center mb-6">
+                    <img src="images/aviyr4m1h.webp" alt="The Climber Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-700 dark:text-blue-300">Bachelor of Business Administration, Major in Information Technology</h3>
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Jun 2017 - Dec 2020 </span>
+                </div>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Symbiosis International University | Pune, India</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">Gained skills in technology implementation, innovation, and entrepreneurship. The program prepared me to tackle challenges across corporate, social, and government sectors.</p>
+                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    <li><strong>Technical Skills:</strong> Expertise in web development, Python, Java, database systems, and information security.</li>
+                    <li><strong>Community Engagement:</strong> Mentored students through the Symbiosis Tech Forum, providing structured guidance on technical projects.</li>
+                    <li><strong>Leadership:</strong> Co-President of Clubs overseeing cultural activities, and International Cell Head guiding 78+ international students.</li>
+                    <li><strong>Content Creation:</strong> Chief Editor of the Annual Magazine, leading editorial activities and showcasing campus diversity.</li>
+                    <li><strong>App Development:</strong> Co-developed "Farm Aid," an app for empowering Indian farmers with weather updates and crop management tips.</li>
+                </ul>
+                <button id="prev-education" class="absolute left-4 bottom-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Card Toggle Script -->
+    <script>
+        document.getElementById('next-education').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.education-card');
+            cards[0].classList.add('hidden');
+            cards[1].classList.remove('hidden');
+        });
+
+        document.getElementById('prev-education').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.education-card');
+            cards[1].classList.add('hidden');
+            cards[0].classList.remove('hidden');
+        });
+    </script>
+</section>
+
+
+<!-- Swiper.js for sliding effect -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'slide',
+        spaceBetween: 20,
+    });
+</script>
+
+<!-- Certifications section starts here -->
+<section id="certifications" class="py-20 bg-[#FE2EAFC]"> <!-- Light Gray / Charcoal -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-down">Professional Certifications</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+       
+            <!-- Certification 1 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="300">
+                <div class="flex items-center mb-4">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10 mr-3">
+                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Python for Data Engineering</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">Issued by <strong>DataVidhya</strong></p>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Nov 2024</span>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
+                <div class="flex items-center mb-4">
+                    <img src="./images/database.png" alt="SQL" class="w-10 h-10 mr-3">
+                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">SQL for Data Engineering</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">Issued by <strong>LinkedIn</strong></p>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Nov 2024</span>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="500">
+                <div class="flex items-center mb-4">
+                    <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau" class="w-10 h-10 mr-3">
+                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Tableau Essential Training</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">Issued by <strong>LinkedIn</strong></p>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Nov 2024</span>
+            </div>
+
+            <!-- Certification 4 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+                <div class="flex items-center mb-4">
+                    <img src="./images/snow.png" alt="Snowflake" class="w-10 h-10 mr-3">
+                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Data Warehouse with Snowflake</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">Issued by <strong>DataVidhya</strong></p>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Dec 2024</span>
+            </div>
+            
+            <!-- Certification 5 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105" data-aos="zoom-in">
+                <div class="flex items-center mb-4">
+                    <img src="./images/Apache Airflow.png" alt="Apache Airflow" class="w-10 h-10 mr-3">
+                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Apache Airflow for Data Engineering</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">Issued by <strong>DataVidhya</strong></p>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Dec 2024</span>
+            </div>
+
+            <!-- Certification 6 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-2xl shadow-xl transform transition-transform duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+                <div class="flex items-center mb-4">
+                    <img src="./images/ds1.png" alt="Apache Spark" class="w-10 h-10 mr-3">
+                    <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Apache Spark with Databricks</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">Issued by <strong>DataVidhya</strong></p>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">Jan 2025</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Volunteer section starts here -->
+<section id="volunteering" class="py-20 bg-[#0F766E] dark:bg-[#115E59]"> <!-- Teal Accent -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-white dark:text-blue-300 mb-12" data-aos="fade-up">Giving Back to the Community</h2>
+        <div class="space-y-12">
+
+            <!-- Volunteer Experience 1 -->
+            <div class="flex flex-col md:flex-row items-center md:items-start bg-white dark:bg-gray-700 rounded-3xl shadow-2xl p-8" data-aos="fade-right">
+                <img src="images/v2.png" alt="Door Step School" class="w-full md:w-1/3 h-auto rounded-2xl shadow-lg mb-6 md:mb-0 md:mr-8">
+                <div class="text-gray-700 dark:text-gray-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300 mb-4">Education Outreach Volunteer - Door Step School</h3>
+                    <p class="mb-4 leading-relaxed">Door Step School is dedicated to providing primary education to children from underserved communities, especially those who lack access to formal schooling.</p>
+                    <ul class="list-disc pl-6 space-y-3">
+                        <li><strong>Educational Access:</strong> Assisted in learning programs for 1000+ students, helping them transition into formal schooling.</li>
+                        <li><strong>Workshops:</strong> Led interactive sessions on life skills like confidence, communication, and problem-solving.</li>
+                        <li><strong>Community Engagement:</strong> Collaborated with parents and local communities to drive higher enrollment and participation.</li>
+                    </ul>
+                    <p class="mt-4">By working with Door Step School, I helped create meaningful change by empowering children with knowledge and skills for a brighter future.</p>
+                </div>
+            </div>
+
+            <!-- Volunteer Experience 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center md:items-start bg-white dark:bg-gray-700 rounded-3xl shadow-2xl p-8" data-aos="fade-left">
+                <img src="images/v1.JPG" alt="Enabling Leadership" class="w-full md:w-1/3 h-auto rounded-2xl shadow-lg mb-6 md:mb-0 md:ml-8">
+                <div class="text-gray-700 dark:text-gray-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300 mb-4">Summer Intern – Enabling Leadership</h3>
+                    <p class="mb-4 leading-relaxed">Enabling Leadership is a global nonprofit dedicated to empowering children through experiential learning programs that foster leadership, critical thinking, and life skills.</p>
+                    <ul class="list-disc pl-6 space-y-3">
+                        <li><strong>High-Impact Programs:</strong> Collaborated with partners like Tata Trusts, Axis Bank, and JP Morgan to facilitate programs impacting 620 children.</li>
+                        <li><strong>Sports & Music Events:</strong> Organized 12 football matches and 2 music sessions every weekend, ensuring engagement and smooth execution.</li>
+                        <li><strong>Leadership & Teamwork:</strong> Designed activities promoting collaboration, discipline, and creative expression for holistic development.</li>
+                    </ul>
+                    <p class="mt-4">Through this experience, I contributed to creating a dynamic, inclusive learning environment where children could develop holistically.</p>
+                </div>
+            </div>
+
+            <!-- Volunteer Experience 3 -->
+            <div class="flex flex-col md:flex-row items-center md:items-start bg-white dark:bg-gray-700 rounded-3xl shadow-2xl p-8" data-aos="fade-right">
+                <img src="images/v5.png" alt="iVolunteer" class="w-full md:w-1/3 h-auto rounded-2xl shadow-lg mb-6 md:mb-0 md:mr-8">
+                <div class="text-gray-700 dark:text-gray-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300 mb-4">Student Volunteer – iVolunteer</h3>
+                    <p class="mb-4 leading-relaxed">iVolunteer is a leading nonprofit that connects volunteers with organizations across India, driving social change in education, health, environment, and more.</p>
+                    <ul class="list-disc pl-6 space-y-3">
+                        <li><strong>Environmental Sustainability:</strong> Engaged in Plogging (running + litter picking) to protect oceans from plastic pollution.</li>
+                        <li><strong>Clean Communities:</strong> Raised environmental awareness through clean-up efforts and community engagement.</li>
+                        <li><strong>Global Change:</strong> Contributed to the global Plogging movement, promoting sustainable living and cleaner cities.</li>
+                    </ul>
+                    <p class="mt-4">Through my involvement with iVolunteer, I supported the organization’s mission to engage people in social development and environmental sustainability.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!--Internship section starts here -->
+<section id="internships" class="py-20 bg-[#F9FAFB] dark:bg-[#2D2D2D]"> <!-- Very Light Gray / Dark Gray -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-up">
+            Internship Highlights
+        </h2>
+
+        <div id="internship-cards" class="relative">
+
+            <!-- Internship 1 Card -->
+            <div class="internship-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 animate-fade-in-up">
+                <div class="flex items-center mb-6">
+                    <img src="images/climber.jpeg" alt="The Climber Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-600 dark:text-blue-300">Sales and Marketing Intern</h3>
+                </div>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">The Climber | Jun 2018 - Sep 2018</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    As a Sales and Marketing Intern at The Climber, an online educational platform, I contributed to driving growth and expanding the platform's reach in the EdTech space:
+                </p>
+                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    <li><strong>Revenue Growth:</strong> Spearheaded sales and marketing efforts, achieving a 35% increase in revenue within the first year.</li>
+                    <li><strong>Strategic Partnerships:</strong> Established partnerships with educational institutions, expanding course offerings by 25%.</li>
+                    <li><strong>Digital Marketing Campaigns:</strong> Led targeted campaigns, resulting in a 50% growth in user registrations and increased brand visibility.</li>
+                </ul>
+                <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    This internship sharpened my sales and marketing skills and fueled my passion for using technology to make education accessible to young learners.
+                </p>
+                <button id="next-internship" class="absolute right-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Internship 2 Card (Initially Hidden) -->
+            <div class="internship-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 animate-fade-in-up hidden">
+                <div class="flex items-center mb-6">
+                    <img src="images/n2.jpg" alt="Lead School Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-600 dark:text-blue-300">Backend Development Intern</h3>
+                </div>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Lead School | May 2020 – Jul 2020</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    During my time as a Backend Development Intern at Lead School, I played an integral role in enhancing assessment processes, contributing to excellent learning outcomes for students:
+                </p>
+                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    <li><strong>Assessment Process Optimization:</strong> Contributed to streamlining internal assessment tools, aligning them with the school's vision of providing international-standard education.</li>
+                    <li><strong>Data-Driven Insights:</strong> Analyzed student performance data, providing actionable insights to drive instructional improvements.</li>
+                    <li><strong>Impact on Learning Outcomes:</strong> Assisted in developing assessments that aligned with Lead School’s mission of enabling every child to learn well, think deeply, and become a future leader.</li>
+                </ul>
+                <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    This experience provided me with valuable insights into the role of data-driven approaches in transforming education and shaping future leaders in India.
+                </p>
+                <button id="prev-internship" class="absolute left-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript to Toggle Cards -->
+    <script>
+        document.getElementById('next-internship').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.internship-card');
+            cards[0].classList.add('hidden');
+            cards[1].classList.remove('hidden');
+        });
+
+        document.getElementById('prev-internship').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.internship-card');
+            cards[1].classList.add('hidden');
+            cards[0].classList.remove('hidden');
+        });
+    </script>
+</section>
+
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Beyond Work Section -->
+<section id="beyondwork" class="py-20 bg-[#FEF3C7] dark:bg-[#F59E0B]"> <!-- Soft Amber Accent -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-up">Beyond Work</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+
+            <!-- Hobby 1 -->
+            <div class="overflow-hidden rounded-3xl shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/p6.HEIC" alt="Running" class="w-full h-72 object-cover">
+                <div class="p-4 bg-white dark:bg-gray-700 text-center">
+                    <p class="text-gray-800 dark:text-gray-200 text-lg font-semibold">Running🏃‍♀️</p>
+                </div>
+            </div>
+
+            <!-- Hobby 2 -->
+            <div class="overflow-hidden rounded-3xl shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/IMG_1368.WEBP" alt="Journaling" class="w-full h-72 object-cover">
+                <div class="p-4 bg-white dark:bg-gray-700 text-center">
+                    <p class="text-gray-800 dark:text-gray-200 text-lg font-semibold">Journaling & a good brew ☕</p>
+                </div>
+            </div>
+
+            <!-- Hobby 3 -->
+            <div class="overflow-hidden rounded-3xl shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/p14.HEIC" alt="Hiking Trails" class="w-full h-72 object-cover">
+                <div class="p-4 bg-white dark:bg-gray-700 text-center">
+                    <p class="text-gray-800 dark:text-gray-200 text-lg font-semibold">Hiking Trails ⛰️</p>
+                </div>
+            </div>
+
+            <!-- Hobby 4 -->
+            <div class="overflow-hidden rounded-3xl shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/p3.jpg" alt="Cooking" class="w-full h-72 object-cover">
+                <div class="p-4 bg-white dark:bg-gray-700 text-center">
+                    <p class="text-gray-800 dark:text-gray-200 text-lg font-semibold">Cooking 🍳</p>
+                </div>
+            </div>
+
+            <!-- Hobby 5 -->
+            <div class="overflow-hidden rounded-3xl shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="500">
+                <img src="images/p4.jpg" alt="Plant Parenting" class="w-full h-72 object-cover">
+                <div class="p-4 bg-white dark:bg-gray-700 text-center">
+                    <p class="text-gray-800 dark:text-gray-200 text-lg font-semibold">Plant Parenting 🌱</p>
+                </div>
+            </div>
+
+            <!-- Hobby 6 -->
+            <div class="overflow-hidden rounded-3xl shadow-xl transform transition duration-500 hover:scale-105" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/istock-1310353494.jpg.avif" alt="Paddling Escapes" class="w-full h-72 object-cover">
+                <div class="p-4 bg-white dark:bg-gray-700 text-center">
+                    <p class="text-gray-800 dark:text-gray-200 text-lg font-semibold">Badminton 🏸.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200, once: true });
+</script>
+
+<!-- Core competencies section starts here -->
+<section id="skills" class="py-20 bg-[#F8FAFC] dark:bg-[#1E293B]"> <!-- Very Light Slate / Dark Slate -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-up">Core Competencies</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <!-- Competency 1 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-3xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+                <div class="text-5xl text-blue-500 mb-4">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-200 mb-2">Problem-Solving</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Innovative thinker who loves tackling complex challenges and finding creative, data-driven solutions.</p>
+            </div>
+
+            <!-- Competency 2 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-3xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+                <div class="text-5xl text-blue-500 mb-4">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-200 mb-2">Leadership & Collaboration</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Strong leadership skills with a focus on teamwork, collaboration, and driving shared success.</p>
+            </div>
+
+            <!-- Competency 3 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-3xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="300">
+                <div class="text-5xl text-blue-500 mb-4">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-200 mb-2">Analytical Thinking</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Turning complex data into actionable insights that drive impactful business decisions.</p>
+            </div>
+
+            <!-- Competency 4 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-3xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
+                <div class="text-5xl text-blue-500 mb-4">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-200 mb-2">Communication Skills</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Effective at storytelling with data, delivering clear insights to stakeholders, and facilitating strategic discussions.</p>
+            </div>
+
+            <!-- Competency 5 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-3xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="500">
+                <div class="text-5xl text-blue-500 mb-4">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-200 mb-2">Adaptability & Learning</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Continuously evolving with emerging trends, adapting quickly to new challenges and technologies.</p>
+            </div>
+
+            <!-- Competency 6 -->
+            <div class="p-6 bg-white dark:bg-gray-700 rounded-3xl shadow-xl text-center transform transition duration-500 hover:scale-105" data-aos="zoom-in" data-aos-delay="600">
+                <div class="text-5xl text-blue-500 mb-4">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-200 mb-2">Creativity & Innovation</h3>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Passionate about bringing fresh ideas and innovative solutions to projects and problem-solving scenarios.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200, once: true });
+</script>
+
+<!-- Awards & Achievements Section -->
+<section id="awards" class="py-20 bg-[#1565C0]"> <!-- Deep Blue Accent / Near Black -->
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="section-title text-4xl font-bold text-center text-white dark:text-blue-300 mb-12" data-aos="fade-up">Awards & Achievements</h2>
+        <div class="space-y-12">
+            <!-- Award 1 -->
+             <div class="relative p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-700 hover:scale-105" data-aos="fade-right" data-aos-delay="100">
+                <div class="flex items-center mb-4">
+                    <div class="text-4xl text-blue-500 mr-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Top Sales Award</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-300">Cafe Landwer | 2023</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Awarded a top performer bonus for driving a 20% increase in average check value and contributing over $15,000 in daily sales through strategic upselling and personalized customer service.</p>
+            </div>
+
+<!-- Award 2 -->
+<div class="relative p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-700 hover:scale-105" data-aos="fade-left" data-aos-delay="200">
+    <div class="flex items-center mb-4">
+        <div class="text-4xl text-blue-500 mr-4">
+            <i class="fas fa-medal"></i>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Best Research Contribution</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-300">Seneca College | 2022</p>
+        </div>
+    </div>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Awarded for outstanding contributions as a Research Assistant on the "Valuation of Land in Southwestern Ontario" project, delivering impactful insights through data analysis and market research.</p>
+</div>
+
+<!-- Award 3 -->
+<div class="relative p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-700 hover:scale-105" data-aos="fade-right" data-aos-delay="300">
+    <div class="flex items-center mb-4">
+        <div class="text-4xl text-blue-500 mr-4">
+            <i class="fas fa-award"></i>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Excellence in Data Analytics</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-300">ClearTax | 2021</p>
+        </div>
+    </div>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Recognized for facilitating over 1 million tax filings and contributing to over $12.5M in revenue through data-driven financial solutions and optimized compliance processes.</p>
+</div>
+
+<!-- Award 4 -->
+<div class="relative p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-700 hover:scale-105" data-aos="fade-left" data-aos-delay="400">
+    <div class="flex items-center mb-4">
+        <div class="text-4xl text-blue-500 mr-4">
+            <img src="images/shaolin-2.png" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Green Belt in Shaolin Kung Fu (Martial Arts)</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-300">Mansuria Kung Fu International</p>
+        </div>
+    </div>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Earned the Green Belt in Shaolin Kung Fu, symbolizing proficiency in foundational martial arts techniques and discipline, reflecting dedication to physical fitness, mental focus, and self-defense mastery.</p>
+</div>
+
+    </div>
+</section>
+
+<!--Contact sections starts here-->
+<!-- Footer Section (Contact converted) -->
+<section id="contact" class="bg-[#e9ecef] py-8 text-gray-700 dark:text-gray-300">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-8" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-blue-600 dark:text-blue-300 mb-4">Let's Connect</h2>
+            <p class="text-xl">
+                Ready to join <strong>forces</strong>, push <strong>boundaries</strong>, and make a <strong>difference!</strong>
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center text-center">
+            <div class="text-lg" data-aos="fade-right">
+                <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300 mb-4">Get in Touch</h3>
+                <p class="flex justify-center items-center space-x-4">
+                    <i class="fas fa-envelope text-blue-500 text-2xl"></i>
+                    <a href="mailto:soniaranvir04@gmail.com" class="hover:text-blue-600 transition duration-300">soniaranvir04@gmail.com</a>
+                </p>
+                <p class="flex justify-center items-center space-x-4">
+                    <i class="fas fa-map-marker-alt text-blue-500 text-2xl"></i>
+                    <span>Toronto, Canada</span>
+                </p>
+            </div>
+
+            <div class="text-lg" data-aos="fade-left">
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.linkedin.com/in/soniaranvir/" target="_blank" class="text-blue-600 dark:text-blue-300 hover:text-blue-800 text-3xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Soniaranvir" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 text-3xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/RanvirSonia" target="_blank" class="text-blue-400 hover:text-blue-600 text-3xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.datascienceportfol.io/soniaranvir04" target="_blank" class="text-green-500 hover:text-green-700 text-3xl">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="Sonia Ranvir's Resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                        Download My Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-8 text-sm text-gray-700 dark:text-gray-300">
+            © 2024 Sonia Ranvir. All Rights Reserved.
+        </footer>
+    </div>
+</section>
+
+
+<!-- Initialize AOS Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200, once: true });
+</script>
+
+
+    <!-- Scroll-to-Top Button -->
+     <button id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-transform duration-300 transform hover:scale-110 hidden">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-to-Top Button Script -->
+     <script>
+    // Show or hide the button based on scroll position
+    window.onscroll = function() {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll smoothly to the top when button is clicked
+    document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
+
+
+    <!-- JavaScript for Light/Dark Mode, Typing Effect, and Scroll-to-Top Button -->
+    <script>
+        // Light/Dark Mode Toggle
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+          document.documentElement.classList.toggle('dark');
+      
+          // Save the mode to local storage
+          if (document.documentElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+          } else {
+            localStorage.setItem('theme', 'light');
+          }
+        });
+      
+        // Load the saved theme on page load
+        window.onload = function() {
+          if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        };
+      
+    
+        // Typing Animation
+        const typingText = ["Data Analytics", "Data Engineering", "Python Development", "Cloud Integrations"];
+        let i = 0, j = 0, currentText = '', isDeleting = false;
+    
+        function type() {
+            if (i < typingText.length) {
+                if (!isDeleting && j <= typingText[i].length) {
+                    currentText = typingText[i].substring(0, j++);
+                    document.querySelector('.typing-text').textContent = currentText;
+                    setTimeout(type, 150);
+                } else if (isDeleting && j > 0) {
+                    currentText = typingText[i].substring(0, j--);
+                    document.querySelector('.typing-text').textContent = currentText;
+                    setTimeout(type, 100);
+                } else if (!isDeleting && j > typingText[i].length) {
+                    isDeleting = true;
+                    setTimeout(type, 1000);
+                } else if (isDeleting && j === 0) {
+                    isDeleting = false;
+                    i = (i + 1) % typingText.length;
+                    setTimeout(type, 500);
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
+
+</body>
+

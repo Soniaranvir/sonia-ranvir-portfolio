@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Home Section with Vanta Birds Animation -->
+    <section id="home" class="h-screen w-full relative" style="overflow: hidden;">
+        <!-- Vanta Birds Background -->
+        <div id="vanta-birds" class="absolute top-0 left-0 w-full h-full"></div>
+
+        <!-- Foreground Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-gray-900">
+            <h1 class="text-5xl font-bold">Hi, I'm <span class="text-blue-600">Sonia Ranvir</span></h1>
+            <p class="mt-4 text-xl">Data Enthusiast | Problem Solver | Innovator</p>
+            <a href="#about" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">About Me</a>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/soniaranvir/" target="_blank" class="text-2xl text-gray-700 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Soniaranvir" target="_blank" class="text-2xl text-gray-700 hover:text-gray-900"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/@sreedev.r5" target="_blank" class="text-2xl text-gray-700 hover:text-black"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vanta.js and Three.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+    <!-- Initialize the Vanta Birds Animation -->
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-birds",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xececf2,
+            color1: 0x3b82f6,     // Primary bird color (blue)
+            color2: 0x9333ea,     // Secondary bird color (purple)
+            birdSize: 1.2,        // Adjust size of the birds
+            quantity: 3           // Number of birds on screen
+        });
+    </script>
+
+</body>
+</html>
