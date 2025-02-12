@@ -36,6 +36,16 @@
         #home h1 { color: #1e3a8a; }
         .social-icons a { color: #1e40af; transition: color 0.3s; }
         .social-icons a:hover { color: #2563eb; }
+
+        .nav-link {
+            @apply text-black hover:underline px-2 py-1 text-lg; }
+            
+            @media (max-width: 640px) {
+                
+                .nav-link {
+                    @apply text-center text-base; }
+                }
+
     </style>
 
     <!-- Google Font -->
@@ -49,23 +59,50 @@
 
 
    <!-- Navigation Bar -->
-<header class="fixed top-0 left-0 w-full shadow-md z-50">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ul class="flex justify-center items-center h-16 space-x-6">
-            <li><a href="#home" class="nav-link text-black hover:underline">Home</a></li>
-            <li><a href="#about" class="nav-link text-black hover:underline">About</a></li>
-            <li><a href="#portfolio" class="nav-link text-black hover:underline">Portfolio</a></li>
-            <li><a href="#experience" class="nav-link text-black hover:underline">Experience</a></li>
-            <li><a href="#education" class="nav-link text-black hover:underline">Education</a></li>
-            <li><a href="#certifications" class="nav-link text-black hover:underline">Certifications</a></li>
-            <li><a href="#volunteering" class="nav-link text-black hover:underline">Volunteering</a></li>
-            <li><a href="#internships" class="nav-link text-black hover:underline">Internships</a></li>
-            <li><a href="#beyondwork" class="nav-link text-black hover:underline">Hobbies</a></li>
-            <li><a href="#skills" class="nav-link text-black hover:underline">Skills</a></li>
-            <li><a href="#awards" class="nav-link text-black hover:underline">Awards</a></li>
-            <li><a href="#contact" class="nav-link text-black hover:underline">Contact</a></li>
+<header class="fixed top-0 left-0 w-full shadow-md z-50 bg-white">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+
+        <!-- Hamburger Button (Visible on Small Screens) -->
+        <button id="menu-toggle" class="text-black sm:hidden focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Nav Links (Hidden on Small Screens) -->
+        <ul id="nav-links" class="hidden sm:flex space-x-4 items-center">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#volunteering" class="nav-link">Volunteering</a></li>
+            <li><a href="#internships" class="nav-link">Internships</a></li>
+            <li><a href="#beyondwork" class="nav-link">Hobbies</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#awards" class="nav-link">Awards</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Dropdown Menu for Small Screens -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
+        <ul class="flex flex-col space-y-4 p-4">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#volunteering" class="nav-link">Volunteering</a></li>
+            <li><a href="#internships" class="nav-link">Internships</a></li>
+            <li><a href="#beyondwork" class="nav-link">Hobbies</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#awards" class="nav-link">Awards</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
     <script>
         tailwind.config = {
           darkMode: 'class',
@@ -116,15 +153,16 @@
         border-bottom: 2px solid #d4d6e2;
         padding-bottom: 0.5rem;
     }
- 
     #vanta-globe {
         position: relative;
         display: flex;
+        flex-wrap: wrap;          /* Allows items to wrap on smaller screens */
         align-items: center;
         justify-content: flex-start;
         height: 100vh;
         padding: 2rem;
         padding-left: 5rem;
+        min-height: 100vh;        /* Ensures the section takes full screen height */
     }
  
     .home-image {
@@ -134,13 +172,14 @@
         margin-right: 2rem;
         transform: translateY(-50px); /* Move image upwards */
     }
-    
+
     .home-image img {
         width: 300px;
         height: 340px;
         object-fit: cover;
         border-radius: 20px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        margin: 1rem;            /* Space around the image */
     }
  
     .home-content {
@@ -213,20 +252,41 @@
     }
 
     @media (max-width: 768px) {
-        #vanta-globe {
-            flex-direction: column;
-            text-align: center;
-        }
- 
-        .home-image {
-            margin: 2rem 0 0 0;
-        }
- 
-        .home-image img {
-            width: 200px;
-            height: 300px;
-        }
+    #vanta-globe {
+        flex-direction: column;        /* Stack content vertically */
+        align-items: center;          /* Center everything horizontally */
+        padding: 1rem;                /* Reduce padding for smaller screens */
     }
+
+    .home-image {
+        margin: 1rem 0;               /* Adjust space around the image */
+        transform: translateY(-50px); /* Maintain the upward shift on mobile too */
+    }
+
+    .home-image img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .home-content {
+        max-width: 100%;              /* Allow the content to take full width */
+        text-align: center;           /* Center-align text for mobile */
+        margin-top: 1rem;             /* Add slight spacing from image */
+    }
+
+    .home-content h2 {
+        font-size: 2.5rem;            /* Reduce font size for better fit */
+    }
+
+    .home-content h1 {
+        font-size: 2rem;              /* Adjust name font size */
+    }
+
+    .home-content p {
+        font-size: 1.5rem;            /* Adjust paragraph font size */
+    }
+}
+
  </style>
  
 <!-- Home Section with Globe Background -->
@@ -1156,6 +1216,13 @@
         }
         document.addEventListener('DOMContentLoaded', type);
     </script>
+<!-- JavaScript for the Mobile Menu -->
+    // Toggle for Mobile Menu
+    <script> ('menu-toggle').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+    </script> 
 
 </body>
 
