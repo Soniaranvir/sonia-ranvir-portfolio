@@ -625,6 +625,26 @@
                     <i class="fas fa-arrow-left"></i>
                 </button>
             </div>
+            <!-- Sri Chaitanya Junior College Card -->
+            <div class="education-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 animate-fade-in-up" data-aos="fade-right" data-aos-duration="1500">
+                <div class="flex items-center mb-6">
+                    <img src="images/sri.jpg.webp" alt="Sri Chaitanya Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-700 dark:text-blue-300">Higher Secondary Education - MPC</h3>
+                    <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">2017 - 2019</span>
+    </div>
+    <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Sri Chaitanya Junior College | Hyderabad, India | GPA: 93%</p>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+        Completed the MPC (Mathematics, Physics, Chemistry) program, a rigorous curriculum focused on engineering and technical education. Achieved a perfect score in Mathematics in the final exams for both 11th and 12th grade—the highest ever recorded at the institution.
+    </p>
+    <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+        <li><strong>Courses:</strong> Advanced Calculus, Algebra, Mechanics, Electromagnetism, Organic & Inorganic Chemistry, Probability & Statistics</li>
+        <li><strong>Competitive Focus:</strong> Strong foundation in problem-solving and analytical skills, scoring <strong>145 in EAMCET</strong>, a highly competitive engineering entrance exam in Telangana and Andhra Pradesh.</li>
+    </ul>
+    <button id="next-education" class="absolute right-4 bottom-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+</div>
+
         </div>
     </div>
 
@@ -637,6 +657,11 @@
         });
 
         document.getElementById('prev-education').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.education-card');
+            cards[1].classList.add('hidden');
+            cards[0].classList.remove('hidden');
+        });
+        document.getElementById('next-education').addEventListener('click', function() {
             const cards = document.querySelectorAll('.education-card');
             cards[1].classList.add('hidden');
             cards[0].classList.remove('hidden');
