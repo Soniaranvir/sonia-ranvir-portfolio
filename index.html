@@ -13,6 +13,7 @@
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Smooth Scroll and Custom Styles -->
     <style>
@@ -309,9 +310,9 @@
             <a href="https://github.com/Soniaranvir" aria-label="GitHub" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="soniaranvir04@gmail.com" aria-label="Gmail" target="_blank">
-                <i class="fab fa-gmail"></i>
-            </a>            
+            <a href="mailto:soniaranvir04@gmail.com" aria-label="Gmail" target="_blank">
+                <i class="fa fa-envelope"></i> <!-- This uses a different Gmail-like icon -->
+            </a>        
         </div>
     </div>
 </div>
@@ -360,21 +361,12 @@
         
         <!-- Content Box with Animation -->
         <div class="content-box p-12 bg-gradient-to-r from-[#BBDEFB] to-[#90CAF9] dark:from-gray-700 dark:to-gray-800 shadow-2xl rounded-3xl max-w-6xl mx-auto font-[Inter] leading-relaxed text-gray-700 dark:text-gray-300 text-lg" data-aos="fade-up" data-aos-duration="1500">
-    <p class="mb-4">
-        I see the world as a network of hidden patterns stories waiting to be uncovered through data. I’ve always been drawn to solving complex problems, not just for the answers, but for the journey of discovery itself. Whether it's decoding trends, optimizing decisions, or asking the right questions, I believe data is the bridge between intuition and impact.
-    </p>
-    <p class="mb-4">
-        What sets me apart is my balance of logic and creativity. I don’t just analyze, I think critically, challenge assumptions, and seek innovative solutions. I thrive in environments where curiosity meets action, where challenges push me to think differently.
-    </p>
-    <p class="mb-4">
-        Beyond analytics, I value adaptability, continuous learning, and pushing boundaries. To me, growth isn’t about following trends, it's about questioning them, experimenting, and finding better ways forward. My approach is simple: stay curious, embrace challenges, and let data guide the way.
-    </p>
-    <p>
-        I’m looking for opportunities where I can use data to solve problems and contribute to a dynamic team. If you’re looking for someone who’s not just skilled but hungry to grow, adapt, and make a difference, let’s connect!
-    </p>
-</div>
+            <p class="mb-4"> I’m a Senior Data Analyst at Aliro Immigration Services, where I don’t just analyze data I turn it into high-impact solutions that reshape the way immigration services use technology. My work focuses on driving smarter decisions, improving client experiences, and optimizing processes through data-driven strategies that challenge industry norms.</p>
+            <p class="mb-4"> I’m obsessed with solving tough problems and turning complexity into clarity. Whether it’s deploying advanced machine learning models, automating systems, or crafting data-driven strategies that disrupt industries, I’m always asking, “How can we do this better, faster, smarter?” </p>
+            <p class="mb-4"> I’m not just looking for another job I want to be part of something that pushes the limits of what’s possible with data, where my curiosity, creativity, and data-first mindset can drive meaningful change. If you’re looking for a bold, innovative thinker who’s ready to lead the charge, let’s make it happen.</p>
+        </div>
         
-        <!-- Tech Stack Section with Animations 
+        <!--Tech Stack Section with Animations -->
         <div class="max-w-6xl mx-auto px-4 mt-10">
             <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Tech Stack</h2>
             <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center" data-aos="zoom-in" data-aos-duration="1500">
@@ -396,7 +388,7 @@
                 <img src="./images/n12.png" alt="Databricks" class="w-16 h-16">
                 <img src="./images/Apache Airflow.png" alt="Airflow" class="w-16 h-16">                
                 <img src="./images/api.png" alt="API" class="w-16 h-16">
-            </div> -->
+            </div>
         </div>
     </div>
 </section>
@@ -413,86 +405,241 @@
 </body>
 </html>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-20 bg-[#F5F5F5] dark:bg-[#1E293B]"> <!-- Off-White / Dark Slate -->
+<!-- Portfolio Section Starts here -->
+<section id="portfolio" class="py-20 bg-[#F5F5F5] dark:bg-[#1E293B]">
     <div class="max-w-6xl mx-auto px-4">
-        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-up" data-aos-duration="1000"> Portfolio </h2>
-    
+        <h2 class="section-title text-4xl font-bold text-center text-blue-600 dark:text-blue-300 mb-12" data-aos="fade-up" data-aos-duration="1000">
+            Portfolio
+        </h2>
+
+        <!-- Filter Buttons -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="bi">Tableau Dashboards</button>
+            <button class="filter-btn" data-filter="ml">ML & AI</button>
+            <button class="filter-btn" data-filter="eng">Data Engineering</button>
+        </div>
+
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1000">
-                <img src="images/Netflix.png" alt="Netflix Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <a href="https://public.tableau.com/app/profile/sonia.ranvir/viz/Netflix_17355013153570/Netflix" target="_blank"
-                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
-                    <span class="text-white text-lg font-semibold">Read More</span>
-                </a>
-                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Netflix Analysis Dashboard</h3>
+            <!-- Bing API Project (Data Engineering) -->
+            <div class="portfolio-item eng relative group" data-aos="fade-up">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/ETL Pipeline Diagram for Bing API Analytics Project - visual selection.png" alt="Bing API Pipeline" class="portfolio-img">
+                        </div>
+                        <div class="flip-card-back bg-blue-700">
+                            <h3 class="project-title">Bing API Analytics</h3>
+                            <p class="project-desc">Built an ETL pipeline integrating Bing API with Azure & Microsoft Fabric.</p>
+                            <a href="images/Bing News API  Project Breakdown.pdf" target="_blank" class="btn">View Report</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Project 2 -->
-            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1100">
-                <img src="images/bing api.png" alt="Bing API Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <a href="https://github.com/Soniaranvir/End-to-End-Data-Engineer" target="_blank"
-                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
-                    <span class="text-white text-lg font-semibold">Read More</span>
-                </a>
-                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Bing API Project</h3>
+
+            <!-- Walmart Sales Analysis (BI Dashboard) -->
+            <div class="portfolio-item all relative group" data-aos="fade-up">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/walm2.png" alt="Walmart Sales Dashboard" class="portfolio-img">
+                        </div>
+                        <div class="flip-card-back bg-yellow-600">
+                            <h3 class="project-title">Walmart Sales Analysis</h3>
+                            <p class="project-desc">Performed EDA using SQL & Python. Built Tableau dashboard.</p>
+                            <a href="https://github.com/Soniaranvir/End-to-End-Data-Analytics-Project" target="_blank" class="btn">View Dashboard</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Project 3 -->
-            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1200">
-                <img src="images/Untitled design-2.png" alt="Walmart Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <a href="https://github.com/Soniaranvir/End-to-End-Data-Analytics-Project" target="_blank"
-                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
-                    <span class="text-white text-lg font-semibold">Read More</span>
-                </a>
-                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Walmart Sales Analysis</h3>
+
+            <!-- Spotify API Analysis (ML & AI) -->
+            <div class="portfolio-item ml relative group" data-aos="fade-up">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Spotify Playlist Analysis Project Architecture Diagram - visual selection.png" alt="Spotify ML Model" class="portfolio-img">
+                        </div>
+                        <div class="flip-card-back bg-green-600">
+                            <h3 class="project-title">Spotify Playlist Analysis</h3>
+                            <p class="project-desc">Built a recommendation model using Python & AI.</p>
+                            <a href="https://github.com/Soniaranvir/Spotify-Playlist-Analysis-Python-Project" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Project 4 -->
-            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1300">
-                <img src="images/ds116.png" alt="Spotify Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <a href="https://github.com/Soniaranvir/Spotify-Playlist-Analysis-Python-Project/blob/main/README.md" target="_blank"
-                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
-                    <span class="text-white text-lg font-semibold">Read More</span>
-                </a>
-                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Spotify API Playlist Analysis</h3>
+
+            <!-- Netflix Content-->
+            <div class="portfolio-item bi relative group" data-aos="fade-up">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/netf.png" alt="Netflix Content Analysis" class="portfolio-img">
+                        </div>
+                        <div class="flip-card-back bg-red-600">
+                            <h3 class="project-title">Netflix Content Analytics Dashboard</h3>
+                            <p class="project-desc">Developed an interactive Tableau dashboard analyzing Netflix content trends and viewer insights.</p>
+                            <a href="https://public.tableau.com/app/profile/sonia.ranvir/viz/Netflix_17355013153570/Netflix" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Project 5 -->
-            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1400">
-                <img src="images/Streamlit Preview.png" alt="Streamlit Dashboard Project" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <a href="https://sales-dashboard-app-qrkzx6tezyzewgrumtmgl5.streamlit.app/" target="_blank"
-                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
-                    <span class="text-white text-lg font-semibold">Read More</span>
-                </a>
-                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Streamlit Sales Dashboard </h3>
+
+            <!-- Streamlit Dashboard -->
+            <div class="portfolio-item bi relative group" data-aos="fade-up">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Streamlit Preview.png" alt="Streamlit Dashboard" class="portfolio-img">
+                        </div>
+                        <div class="flip-card-back bg-indigo-600">
+                            <h3 class="project-title">Python Streamlit Dashboard</h3>
+                            <p class="project-desc">Developed interactive dashboards using Python & Streamlit.</p>
+                            <a href="https://sales-dashboard-app-qrkzx6tezyzewgrumtmgl5.streamlit.app/" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Project 6 -->
-            <div class="relative group transition-transform duration-700 hover:scale-105 hover:rotate-1" data-aos="fade-up" data-aos-duration="1500">
-                <img src="images/Dashboard 1.png" alt="Stakeholder Insights Analysis" class="w-full object-cover aspect-[16/9] rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-110 group-hover:brightness-110">
-                <a href="https://public.tableau.com/app/profile/sonia.ranvir/viz/Yesbank_17355854184130/Dashboard1" target="_blank"
-                   class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl">
-                    <span class="text-white text-lg font-semibold">Read More</span>
-                </a>
-                <h3 class="text-center text-xl font-medium mt-4 text-blue-600 dark:text-blue-300">Stakeholder Insights Dashboard </h3>
+
+            <!-- Corporate Bank (Tableau Dashboard) -->
+            <div class="portfolio-item bi relative group" data-aos="fade-up">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/stake.png" alt="Stakeholder Insights Dashboard" class="portfolio-img">
+                        </div>
+                        <div class="flip-card-back bg-yellow-600">
+                            <h3 class="project-title">Stakeholder Insights and Performance Dashboard</h3>
+                            <p class="project-desc">Built a data-driven stakeholder insights dashboard to enhance decision-making and business strategy.</p>
+                            <a href="https://public.tableau.com/app/profile/sonia.ranvir/viz/Yesbank_17355854184130/Dashboard1" target="_blank" class="btn">View Dashboard</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
-    
-    
 </section>
 
-<!-- AOS Initialization -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- CSS -->
+<style>
+    .flip-card {
+        position: relative;
+        perspective: 1000px;
+        width: 100%;
+        height: 400px; /* Increased height for better image visibility */
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .flip-card-front {
+        background: white;
+    }
+
+    .flip-card-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        color: white;
+        transform: rotateY(180deg);
+        text-align: center;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    /* Fix for Image Scaling */
+    .portfolio-img {
+    width: 100%; /* Use full width */
+    max-height: 100%; /* Prevents overflow */
+    object-fit: contain; /* Keeps aspect ratio without cropping */
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+/* Optional: If images are still looking small */
+.flip-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 350px; /* Adjust for better scaling */
+}
+    .project-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffffff;
+        transition: color 0.3s;
+    }
+
+    .flip-card:hover .project-title {
+        color: #93c5fd; /* Light blue hover effect */
+    }
+
+    .project-desc {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: white;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+        background: #60a5fa; /* Blue hover effect */
+        color: white;
+    }
+
+    .filter-btn {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFB703; /* Bright orange */
+    transition: color 0.3s; }
+    
+    .filter-btn:hover {
+    color: #FFD700; /* Brighter yellow on hover */ }
+</style>
+
 <script>
-  AOS.init({
-    once: true,
-    offset: 150,
-    duration: 1000,
-  });
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
 </script>
+
 
 <!-- Work Experience Section -->
 <section id="experience" class="py-20 bg-[#64B5F6]"> <!-- Slate Gray -->
@@ -505,28 +652,20 @@
             <!-- Experience 1 -->
             <div class="relative pl-32 mb-12" data-aos="fade-right">
                 <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
-                    <img src="images/images-4.png" alt="Cafe Landwer Logo" class="w-16 h-16 rounded-full">
+                    <img src="images/aliro_immigration_logo.jpeg" alt="Aliro Logo" class="w-16 h-16 rounded-full">
                 </div>
                 <div class="p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl">
-                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Cafe Landwer | Industry - Food & Beverage / Hospitality</h3>
-                    <p class="text-base text-gray-500 dark:text-gray-300">Data Analyst | January 2022 - December 2024</p>
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Aliro Immigration Services</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-300">Data Analyst | January 2022 - Present </p>
                     <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                         <ul class="list-none">
-                            <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        At Café Landwer, a premier Mediterranean-Italian dining brand with 80+ locations, I leveraged data analytics to optimize sales performance, menu strategy, and customer experience. By developing dynamic Power BI dashboards, I enabled real-time tracking of best-selling items, low-margin products, and seasonal trends driving a 20% increase in high-margin item sales through targeted upselling strategies.
-    </li>
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        Automated inventory tracking and demand forecasting using SQL and Python, reducing food waste by 22% and ensuring optimal stock levels across all locations. These predictive insights streamlined procurement, minimizing supply chain inefficiencies.
-    </li>
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        Conducted customer segmentation analysis to boost loyalty program engagement, identifying high-value customers and tailoring personalized discounts and promotions. This data-driven strategy led to a 15% increase in customer retention rates and enhanced revenue per customer.
-    </li>
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        Reduced order processing time by 30% through POS transaction analysis, identifying service bottlenecks and implementing optimized staffing schedules based on peak-hour traffic predictions. These insights enhanced operational efficiency and improved table turnover rates.
-    </li>
-</ul>
+                            <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> At Aliro Immigration, a leading immigration technology platform, I leveraged data analytics to optimize client acquisition and visa success rates. By analyzing applicant trends, approval probabilities, and service demand using SQL and Tableau, I enabled targeted marketing strategies and improved applicant engagement, driving a 15% increase in consultation bookings.</li>
+                            <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Reduced visa application processing time by 35% by automating eligibility assessments through Python-based ETL pipelines, streamlining documentation workflows for global applicants.</li>
+                            <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Optimized fraud detection in visa applications by implementing machine learning models, reducing fraudulent submissions by 40% and improving compliance adherence. </li>
+                            <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Improved stakeholder reporting efficiency with interactive dashboards, providing real-time insights into visa approval rates, customer queries, and compliance metrics, enabling data-driven decision-making. </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
             <!-- Experience 2 -->
             <div class="relative pl-32 mb-12" data-aos="fade-right">
@@ -534,59 +673,33 @@
                     <img src="images/m1m.jpeg" alt="Million Minds Infotech Logo" class="w-16 h-16 rounded-full">
                 </div>
                 <div class="p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl">
-                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Million Minds Infotech | Industry -  IT Services / Recruitment & Staffing</h3>
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Million Minds Infotech</h3>
                     <p class="text-base text-gray-500 dark:text-gray-300">Data Analyst | January 2021 - December 2021</p>
                     <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                         <ul class="list-none">
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        At Million Minds Infotech, a leading workforce and digital solutions provider, I leveraged data analytics to optimize recruitment strategies for Fortune 500 clients across insurance, logistics, and video analytics sectors. By building automated dashboards in Power BI, I provided real-time insights into hiring trends, workforce performance, and candidate pipeline efficiency.
-    </li>
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        Conducted data-driven workforce analytics using SQL and Python, identifying hiring bottlenecks and improving talent acquisition efficiency. These insights reduced average time-to-hire by 25% and streamlined recruitment processes for high-demand roles.
-    </li>
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        Optimized operational workflows by enhancing HR management software, integrating data automation to improve tracking of 2,000+ hires annually. This system upgrade enabled better decision-making and accelerated client workforce scaling.
-    </li>
-    <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">
-        Analyzed post-COVID job market trends to guide clients in adapting hiring strategies, leading to a 20% increase in successful job placements. My insights positioned Million Minds as a data-driven leader in workforce and digital transformation.
-    </li>
-</ul>
+                                <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> At Million Minds Infotech, a workforce and digital solutions provider, I optimized recruitment strategies for Fortune 500 clients using SQL and Power BI, delivering real-time insights on hiring trends and workforce performance to enhance candidate pipeline efficiency. </li>
+                                <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Reduced time-to-hire by 25% by leveraging SQL and Python to analyze workforce data, identify bottlenecks, and streamline recruitment for high-demand roles. </li>
+                                <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Automated HR management processes to track 2,000+ hires annually, improving operational workflows and decision-making for workforce scaling. </li>
+                                <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Provided data-driven insights on post-COVID job market trends, helping clients adapt hiring strategies and increase successful placements by 20%. </li>
+                            </ul>                            
+                    </div>
                 </div>
-            </div>
-            
             <!-- Experience 3 -->
-            <div class="relative pl-32 mb-12" data-aos="fade-left">
+             <div class="relative pl-32 mb-12" data-aos="fade-right">
                 <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
-                    <img src="images/w2.png" alt="Clear Tax Logo" class="w-16 h-16 rounded-full">
+                    <img src="images/bank-icon-png_239804.jpg" alt="Fortune 500 Financial Institution Logo" class="w-16 h-16 rounded-full">
                 </div>
-                <div class="p-8 bg-gray-50 dark:bg-gray-600 rounded-3xl shadow-2xl">
-                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Clear Tax | Industry - FinTech / SaaS Startup</h3>
-                    <p class="text-base text-gray-500 dark:text-gray-300">Financial Analyst Intern| July 2020 - December 2020</p>
+                <div class="p-8 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">AI Strategy Consultant | Fortune 500 Financial Institution, Canada</h3>
+                    <p class="text-base text-gray-500 dark:text-gray-300">Freelance | 2023</p>
                     <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">At ClearTax, India’s leading fintech and SaaS platform, I played a pivotal role in enhancing tax compliance solutions,managing 1000+ client accounts monthly and facilitating over 50,000 tax filings across Income Tax Returns (ITRs), Goods and Services Tax (GST), Tax Deducted at Source (TDS), and business taxes.</li>
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">This strategic impact resulted in over $2 million in taxes filed and $1.5 million in tax savings during my tenure, while driving process automation that supported $8 million in revenue growth in 2021 through products like ClearTax GST, ClearTax TDS, ClearTax e-Filing, and ClearTax Tax Planning.</li>
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Collaborated with cross-functional teams, including finance, legal, and tax compliance experts, to optimize tax filing automation, ensuring regulatory adherence and a seamless client experience.</li>
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">In a hyper-growth fintech environment, I developed deep expertise in tax technology and data-driven financial solutions, improving compliance efficiency and customer experience at scale while contributing to India’s largest tax platform serving 1M+ taxpayers annually.</li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Designed a real-time credit risk scoring model, increasing loan approval efficiency by 22%, improving customer acquisition strategies. </li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Developed a real-time fraud detection system leveraging GraphSAGE on AWS Neptune, enhancing fraud pattern recognition in transactional data and reducing false positives by 25% while maintaining 95% recall, leading to $10M+ in fraud prevention savings annually. </li>
+                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg"> Engineered an LLM-powered customer intelligence platform using GPT-4, LangChain, and Pinecone for vector search, automating 50K+ customer inquiries/month and improving financial recommendation accuracy by 85%, ensuring compliance with Basel III & GDPR using SHAP-based explainability techniques. </li>
                     </ul>
                 </div>
-            </div>
+</div>
 
-            <!-- Experience 4 -->
-            <div class="relative pl-32 mb-12" data-aos="fade-left">
-                <div class="absolute left-0 flex items-center justify-center w-24 h-24 bg-white dark:bg-gray-700 rounded-full shadow-lg">
-                    <img src="images/IncubatorLogo.jpg" alt="Villgro Innovations Foundation Logo" class="w-16 h-16 rounded-full">
-                </div>
-                <div class="p-8 bg-gray-50 dark:bg-gray-600 rounded-3xl shadow-2xl">
-                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-300">Villgro Innovations Foundation | Industry - Social Enterprise/ Nonprofit Startup</h3>
-                    <p class="text-base text-gray-500 dark:text-gray-300">Operations and Marketing Head Intern | September 2017 - December 2019</p>
-                    <ul class="list-none mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">As part of Villgro, a leading incubator in the non-profit sector focused on scaling innovative, impactful social enterprises in India, I directed operations for the Global Unconvention event over 3 consecutive years, overseeing 700+ delegates and 120+ speakers across Agriculture, Energy, Education, and Health sectors. This initiative played a key role in scaling impactful social enterprises, fostering collaborations that addressed India's most pressing development challenges.</li>
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Devised and executed 16 targeted social media marketing campaigns, achieving a 158% increase in digital impressions and conversions year-over-year. This contributed significantly to raising awareness and driving engagement for Villgro's portfolio of social enterprises, helping bring innovative solutions to underserved communities.</li>
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Collaborated closely with the finance department to manage a $200k budget for the Global Unconvention event, optimizing resource allocation to maximize the event's impact on driving policy objectives, fostering sustainability, and empowering India’s social entrepreneurship ecosystem.</li>
-                        <li class="relative pl-6 before:content-['\279C'] before:absolute before:left-0 before:top-0 before:text-blue-500 before:text-lg">Supported Villgro's mission to drive systemic change by helping social enterprises access capital, market opportunities, and strategic partnerships that fostered sustainable growth and positive community impact, enabling scalable innovations that contributed to India’s self-reliance and resilient development.</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -612,12 +725,12 @@
                 </div>
                 <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Seneca College of Arts & Technology | Toronto, Canada</p>
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">Graduated with a focus on global business strategy, project management, and data analytics. This program enhanced my ability to manage international projects, lead global teams, and develop strategies that drive business success in diverse markets.</p>
-                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                <!--<ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     <li><strong>Courses:</strong> Marketing & Communications, Global Economics, International Finance, Decision Theory, Data Analytics & Finance, Global Investment, Project Management, Strategic Customer Relationship Management, Global Business Strategies</li>
                     <li><strong>Assistant Partnerships:</strong> Supported financial literacy initiatives with Prosper Seneca Financial Literacy Club, driving student engagement.</li>
                     <li><strong>Research Assistant:</strong> Contributed to land valuation studies in Southwestern Ontario through data analysis and market research.</li>
                     <li><strong>Integrated Business Projects:</strong> Led cross-functional projects solving real-world business challenges using data analytics and strategic leadership.</li>
-                </ul>
+                </ul>-->
                 <button class="next-education absolute right-4 bottom-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
                     <i class="fas fa-arrow-right"></i>
                 </button>
@@ -632,14 +745,14 @@
                 </div>
                 <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Symbiosis International University | Pune, India</p>
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">BBA IT(Dual Degree) -  Graduated with a focus on IT management, software applications, and business analytics. This program equipped me with a strong foundation in computer science, application development, and data-driven decision-making, enabling me to optimize business processes through technology-driven solutions.</p>
-                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                <!--<ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     <li><strong>Courses:</strong> Built expertise at the intersection of technology and business, mastering web development, programming (Python, Java, HTML, CSS), database systems, and information security.
                         Enhanced skills in software engineering, project management, and financial analysis. </li>
                     <li><strong>Community Engagement:</strong> Mentored students through the Symbiosis Tech Forum, providing structured guidance on technical projects.</li>
                     <li><strong>Leadership:</strong> Co-President of Clubs overseeing cultural activities, and International Cell Head guiding 78+ international students.</li>
                     <li><strong>Content Creation:</strong> Chief Editor of the Annual Magazine, leading editorial activities and showcasing campus diversity.</li>
                     <li><strong>App Development:</strong> Co-developed "Farm Aid," an app for empowering Indian farmers with weather updates and crop management tips.</li>
-                </ul>
+                </ul>-->
                 <button class="prev-education absolute left-4 bottom-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
                     <i class="fas fa-arrow-left"></i>
                 </button>
@@ -657,10 +770,10 @@
                 </div>
                 <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Sri Chaitanya Junior College | Hyderabad, India | GPA: 92%</p>
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg"> Completed the MPC (Mathematics, Physics, Chemistry) program, a rigorous curriculum focused on engineering and technical education. Achieved a perfect score in Mathematics in the final exams for both 11th and 12th grade—the highest ever recorded at the institution.</p>
-                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                <!--<ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     <li><strong>Courses:</strong> Advanced Calculus, Algebra, Mechanics, Electromagnetism, Organic & Inorganic Chemistry, Probability & Statistics, Sanskrit. </li>
                     <li><strong>Competitive Focus:</strong> Strong foundation in problem-solving and analytical skills, scoring <strong>145 in EAMCET</strong>, a highly competitive engineering entrance exam in Telangana and Andhra Pradesh.</li>
-                </ul>
+                </ul>-->
                 <button class="prev-education absolute left-4 bottom-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
                     <i class="fas fa-arrow-left"></i>
                 </button>
@@ -880,7 +993,7 @@
                     <img src="images/climber.jpeg" alt="The Climber Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
                     <h3 class="text-3xl font-semibold text-blue-600 dark:text-blue-300">Sales and Marketing Intern</h3>
                 </div>
-                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">The Climber | Industry -  EdTech / Career Guidance Startup | Jun 2018 - Sep 2018</p>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">The Climber | Industry - EdTech / Career Guidance Startup | Jun 2018 - Sep 2018</p>
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     As a Sales and Marketing Intern at The Climber, an online educational platform, I contributed to driving growth and expanding the platform's reach in the EdTech space:
                 </p>
@@ -892,7 +1005,7 @@
                 <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     This internship sharpened my sales and marketing skills and fueled my passion for using technology to make education accessible to young learners.
                 </p>
-                <button id="next-internship" class="absolute right-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                <button id="next-internship-1" class="absolute right-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
                     <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
@@ -903,7 +1016,7 @@
                     <img src="images/n2.jpg" alt="Lead School Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
                     <h3 class="text-3xl font-semibold text-blue-600 dark:text-blue-300">Backend Development Intern</h3>
                 </div>
-                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Lead School | Industry -  EdTech / SaaS Startup | May 2020 – Jul 2020</p>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Lead School | Industry - EdTech / SaaS Startup | May 2020 – Jul 2020</p>
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     During my time as a Backend Development Intern at Lead School, I played an integral role in enhancing assessment processes, contributing to excellent learning outcomes for students:
                 </p>
@@ -915,7 +1028,59 @@
                 <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                     This experience provided me with valuable insights into the role of data-driven approaches in transforming education and shaping future leaders in India.
                 </p>
-                <button id="prev-internship" class="absolute left-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                <button id="prev-internship-1" class="absolute left-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="next-internship-2" class="absolute right-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Internship 3 Card (Initially Hidden) -->
+            <div class="internship-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 animate-fade-in-up hidden">
+                <div class="flex items-center mb-6">
+                    <img src="images/w2.png" alt="Clear Tax Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-600 dark:text-blue-300">Financial Analyst Intern</h3>
+                </div>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Clear Tax | Industry - FinTech / SaaS Startup | Jul 2020 – Dec 2020</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    At ClearTax, India’s leading fintech and SaaS platform, I played a pivotal role in enhancing tax compliance solutions:
+                </p>
+                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    <li><strong>Client Management:</strong> Managed 1000+ client accounts and facilitated over 50,000 tax filings.</li>
+                    <li><strong>Revenue Impact:</strong> Contributed to tax filings of over $2 million and savings of $1.5 million.</li>
+                    <li><strong>Automation:</strong> Supported automation processes that contributed to $8 million in revenue growth.</li>
+                </ul>
+                <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    This internship gave me in-depth experience in tax technology and financial solutions, improving customer experience and compliance efficiency.
+                </p>
+                <button id="prev-internship-2" class="absolute left-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="next-internship-3" class="absolute right-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Internship 4 Card (Initially Hidden) -->
+            <div class="internship-card p-10 bg-white dark:bg-gray-700 rounded-3xl shadow-2xl transform transition duration-500 animate-fade-in-up hidden">
+                <div class="flex items-center mb-6">
+                    <img src="images/IncubatorLogo.jpg" alt="Villgro Innovations Foundation Logo" class="w-16 h-16 mr-5 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-semibold text-blue-600 dark:text-blue-300">Operations and Marketing Head Intern</h3>
+                </div>
+                <p class="text-lg text-gray-500 dark:text-gray-300 mb-4">Villgro Innovations Foundation | Industry - Social Enterprise/Nonprofit Startup | Sep 2017 – Dec 2019</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    At Villgro, I directed operations for the Global Unconvention event and drove social media campaigns:
+                </p>
+                <ul class="list-disc pl-6 mt-5 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    <li><strong>Event Leadership:</strong> Managed 700+ delegates and 120+ speakers for the Global Unconvention event.</li>
+                    <li><strong>Marketing Campaigns:</strong> Executed 16 campaigns, achieving a 158% increase in digital impressions.</li>
+                    <li><strong>Financial Oversight:</strong> Managed a $200k budget for the event, optimizing resources for greater impact.</li>
+                </ul>
+                <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    This role allowed me to contribute to scaling social enterprises and driving positive community impact.
+                </p>
+                <button id="prev-internship-3" class="absolute left-4 bottom-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
                     <i class="fas fa-arrow-left"></i>
                 </button>
             </div>
@@ -925,20 +1090,64 @@
 
     <!-- JavaScript to Toggle Cards -->
     <script>
-        document.getElementById('next-internship').addEventListener('click', function() {
-            const cards = document.querySelectorAll('.internship-card');
-            cards[0].classList.add('hidden');
-            cards[1].classList.remove('hidden');
+        let currentInternship = 0;
+        const internships = document.querySelectorAll('.internship-card');
+
+        function updateInternship() {
+            internships.forEach((card, index) => {
+                card.classList.add('hidden');
+                if (index === currentInternship) {
+                    card.classList.remove('hidden');
+                }
+            });
+        }
+
+        document.getElementById('next-internship-1').addEventListener('click', function() {
+            if (currentInternship < internships.length - 1) {
+                currentInternship++;
+                updateInternship();
+            }
         });
 
-        document.getElementById('prev-internship').addEventListener('click', function() {
-            const cards = document.querySelectorAll('.internship-card');
-            cards[1].classList.add('hidden');
-            cards[0].classList.remove('hidden');
+        document.getElementById('prev-internship-1').addEventListener('click', function() {
+            if (currentInternship > 0) {
+                currentInternship--;
+                updateInternship();
+            }
         });
+
+        document.getElementById('next-internship-2').addEventListener('click', function() {
+            if (currentInternship < internships.length - 1) {
+                currentInternship++;
+                updateInternship();
+            }
+        });
+
+        document.getElementById('prev-internship-2').addEventListener('click', function() {
+            if (currentInternship > 0) {
+                currentInternship--;
+                updateInternship();
+            }
+        });
+
+        document.getElementById('next-internship-3').addEventListener('click', function() {
+            if (currentInternship < internships.length - 1) {
+                currentInternship++;
+                updateInternship();
+            }
+        });
+
+        document.getElementById('prev-internship-3').addEventListener('click', function() {
+            if (currentInternship > 0) {
+                currentInternship--;
+                updateInternship();
+            }
+        });
+
+        // Initialize
+        updateInternship();
     </script>
 </section>
-
 
 <!-- Initialize AOS Animations -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1093,11 +1302,11 @@
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Top Sales Award</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-300">Cafe Landwer | 2023</p>
+                        <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Top Employee Award</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-300">Aliro Immigration | 2024</p>
                     </div>
                 </div>
-                <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Awarded a top performer bonus for leveraging data-driven insights to optimize sales strategies, driving a 20% increase in average check value and contributing over $15,000 in daily sales through targeted upselling recommendations and customer segmentation analysis.</p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed"> Aliro Immigration – Employee of the Year (2024) for delivering high-impact data strategies that increased revenue by 20% </p>
             </div>
 
 <!-- Award 2 -->
@@ -1122,7 +1331,7 @@
         </div>
         <div>
             <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-300">Excellence in Data Analytics</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-300">ClearTax | 2021</p>
+            <p class="text-sm text-gray-500 dark:text-gray-300">ClearTax | 2020</p>
         </div>
     </div>
     <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Recognized for facilitating over 1 million tax filings and contributing to over $12.5M in revenue through data-driven financial solutions and optimized compliance processes.</p>
@@ -1185,9 +1394,9 @@
                     </a>
                 </div>
                 <div>
-                    <!--<a href="Sonia Ranvir.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                    <a href="images/Sonia Ranvir.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
                         Download My Resume
-                    </a>-->
+                    </a>
                 </div>
             </div>
         </div>
@@ -1290,4 +1499,3 @@
 </script>
 
 </body>
-
